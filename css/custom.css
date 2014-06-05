@@ -1,0 +1,15 @@
+.alignLeft {
+float : left;
+}
+
+.alignRight {
+	float: right;
+}
+
+.greyBgDiv {
+background-color: #888888;
+}
+
+.greyBgDiv h5 {
+color: #ffffff;
+}
