@@ -1,90 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Bestbuy</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Add custom CSS here -->
-	<link href="css/custom.css" rel="stylesheet">
-
-</head>
-
-<body>
-	
-	<div class="container">
-
-        <div class="row">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Bestbuy</title>
+      <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <!-- Add custom CSS here -->
+      <link href="css/custom.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
             <div class="col-lg-12">
-                <h1><a>Bestbuy.com</a></h1>
+               <h1><a>Bestbuy.com</a></h1>
             </div>
-        </div>
-		
-		<div class = "row">
-		<div class = "col-md-12">
-			<!-- your cart row -->
-			<div class = "col-md-12">
-			<div class = "alignLeft">
-			<h2> YOUR CART </h2> 
+         </div>
+         <div class = "row">
+            <div class = "col-md-12">
+			<div id = "cartDescription"
+               <!-- your cart row -->
+               <div class = "col-md-12">
+                  <div class = "alignLeft">
+                     <h2> YOUR CART </h2>
+                  </div>
+                  <div class = "alignRight">
+                     <button type="button" class="btn btn-warning">CHECKOUT ></button>
+                  </div>
+               </div>
+               <!-- yourcart row ends -->
+               <div class = "col-md-12">
+                  <div class = "row greyBgDiv">
+                     <div class = "col-md-6">
+                        <h5> DESCRIPTION </h5>
+                     </div>
+                     <div class = "col-md-3">
+                        <h5> DELIVERY OPTIONS </h5>
+                     </div>
+                     <div class = "col-md-1">
+                        <h5> QTY. </h5>
+                     </div>
+                     <div class = "col-md-2">
+                        <h5> TOTAL </h5>
+                     </div>
+                  </div>
+               </div>
+               <div class = "col-md-12">
+                  <div class = "col-md-6">
+                     <div class = "col-md-4">
+                        <img src = "images/samsung-tv.jpg" class = "responsive"/>
+                     </div>
+                     <div class = "col-md-8">
+                        <a href = "#" class = "prodTitle"> Samsung 46" Class/LED/ 1080p/ 120Hz/ HDTV </a>
+                        <span class = "greyText"> Model: UNIN0007878</span>
+                        <div class = "row well">
+                           <div class = "col-md-12">
+                              <span> <strong> YOU MIGHT ALSO NEED </strong></span>
+                           </div>
+                           <!-- Recommendations should me made lists for synamic data integration--> 
+                           <!-- recommendation 1 -->
+                           <div class = "col-md-7">
+                              <a class = "smallLinks"> Digital speaker - Stereo blaster</a>
+                           </div>
+                           <div class = "col-md-2">
+                              <span class = "smallGreyText"> $89</span>
+                           </div>
+                           <div class = "col-md-3">
+                              <a class = "smallLinks"> Add </a>
+                           </div>
+                           <!-- recommendation ends here ---> 
+                           <!-- recommendation 2 -->
+                           <div class = "col-md-7">
+                              <a class = "smallLinks"> Samsung DVD player</a>
+                           </div>
+                           <div class = "col-md-2">
+                              <span class = "smallGreyText"> $89</span>
+                           </div>
+                           <div class = "col-md-3">
+                              <a class = "smallLinks"> Add </a>
+                           </div>
+                           <!-- recommendation ends here ---> 
+                        </div>
+                     </div>
+                  </div>
+                  <div class = "col-md-3 borderLeftDiv">
+				  <div class="radio">
+						<label> <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+						<span class = "greyText">Storepickup: </span> <a class = "smallLinks"> Check Stores</a>
+						</label>
+						
+						
+				  </div>
+				  <div class="radio">
+				  <label> <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+						<span class = "greyText">Delivery: Most Areas</span> <a class = "smallLinks"> Check Dates</a>
+						</label>
+				  </div>
+				
+                    <div class="checkbox">
+						<label> <input type="checkbox">
+							Email a gift message
+						</label>			 
+					</div>
+                  </div>
+                  <div class = "col-md-1 borderLeftDiv">
+                     <a class = "smallLinks"> Update</a>
+					 <a class = "smallLinks"> Remove</a>
+					 <a class = "smallLinks"> Move to Wishlist</a>
+					 
+                  </div>
+                  <div class = "col-md-2">
+                     <div class = "row well" style="padding: 9px">
+					
+					  <div class = "col-md-12">
+					  <span class = "greyText">Subtotal: </span>
+					  <span class = "maroonTextStriken">$ 1,299.99 </span><br>
+					  <a class = "smallLinks"> See price at checkout</a>
+					  </div>
+					 
+					    <div class = "col-md-12">
+					  <span class = "greyText">Subtotal: </span>
+					  <span class = "maroonTextStriken">$ 1,299.99 </span>
+					  <a class = "smallLinks"> See price at checkout</a> <br>
+					  </div>
+					 
+					  
+					   <div class = "col-md-12" id="offersDiv">
+					   <span class = "greyText">Offers </span> <br>
+					   <ul>
+					   <li>
+					   <a class = "smallLinks"> See financing offers</a>
+					   </li>
+					   
+					   <li>
+					   <a class = "smallLinks"> 50% discount on speakers</a>
+					   </li>
+					   
+					   <li>
+					   <a class = "smallLinks"> Get DVD only for $38</a>
+					   </li>
+					   
+					   <li>
+					   <a class = "smallLinks"> Free delivery on next purchase</a>
+					   </li>
+					   </ul>
+					   </div>
+					 </div>
+                  </div>
+               </div>
+            </div> <!-- cartDescription Ends Here -->
+			<div class = "row col-md-12">
+			<hr style="height:4px;border:none;color:#999999;background-color:#bbb;" />
 			</div>
 			
-			<div class = "alignRight">
-			<button type="button" class="btn btn-warning">CHECKOUT ></button>
-			</div>
-			</div>
-			<!-- yourcart row ends -->
-			
-			<div class = "col-md-12">
-			<div class = "row greyBgDiv">
-			<div class = "col-md-6">
-	         <h5> DESCRIPTION </h5>
-			</div>
-			<div class = "col-md-3">
-			<h5> DELIVERY OPTIONS </h5>
-			</div>
-			<div class = "col-md-1">
-			<h5> QTY. </h5>
-			</div>
-			<div class = "col-md-2">
-			<h5> TOTAL </h5>
-			</div>
-		
+			<div id = "prodTotal">
 			</div>
 			</div>
 			
 			
-			<div class = "col-md-12">
-			<div class = "col-md-6">
-	         <h5> DESCRIPTION </h5>
-			</div>
-			<div class = "col-md-3">
-			<h5> DELIVERY OPTIONS </h5>
-			</div>
-			<div class = "col-md-1">
-			<h5> QTY. </h5>
-			</div>
-			<div class = "col-md-2">
-			<h5> TOTAL </h5>
-			</div>
-			</div>
-
-		</div>
-		</div>
-
-    </div>
-    <!-- /.container -->
-
-    <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
-
-</body>
-
+         </div>
+      </div>
+      <!-- /.container -->
+      <!-- JavaScript -->
+      <script src="js/jquery-1.10.2.js"></script>
+      <script src="js/bootstrap.js"></script>
+   </body>
 </html>

@@ -13,3 +13,36 @@ background-color: #888888;
 .greyBgDiv h5 {
 color: #ffffff;
 }
+
+.borderLeftDiv {
+border-left: 1px solid #888888;
+}
+
+.smallLinks {
+font-size: 10px;
+font-weight: bold;
+}
+
+.greyText {
+color: #888888;
+font-weight: bold;
+}
+
+.smallGreyText {
+font-size: 10px;
+color: #888888;
+}
+
+.maroonTextStriken {
+color: #800000;
+text-decoration: line-through;
+}
+
+#offersDiv  > ul{ 
+ margin-left: 0;
+ padding-left: 3px;
+}
+
+.solidGrey {
+border: 2px solid #888888;
+}
